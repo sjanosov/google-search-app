@@ -21,11 +21,17 @@
     <div class="main-container">
       <form>
         <input type="text" class="search-input" placeholder="Try me..." />
-        <button type="submit" class="search-button">
+        <button type="submit" class="search-button" id="btnSearch">
           Search
         </button>
       </form>
-
+      <div class="btn-container">
+        <a href="#" class="btn-previous" id="btnPrevious">&#8249;</a>
+        <span id="pageNumber"></span>
+        <a href="#" class="btn-next" id="btnNext">&#8250;</a>
+        <!-- <button class="btn-previous" id="btnPrevious">Previous</button>
+        <button class="btn-next" id="btnNext">Next</button> -->
+      </div>
       <div class="content-container">
         <div class="image-container" id="imagesDiv"></div>
         <div class="text-container" id="textsDiv"></div>

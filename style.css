@@ -72,10 +72,8 @@ form {
 }
 .image-container,
 .text-container {
-  display: flex;
+  padding: 20px 10px;
 
-  flex-direction: column;
-  justify-content: space-between;
   background: white;
   width: 48%;
   border: 1px solid black;
@@ -86,7 +84,7 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 5px;
+
   justify-content: center;
   align-items: center;
 }
@@ -103,4 +101,35 @@ form {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.text-div {
+  padding: 10px;
+}
+.text-div:first-child {
+  padding-top: 0;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-container a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.btn-previous,
+.btn-next {
+  background: #2064bd;
+  color: white;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.btn-previous:hover,
+.btn-next:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1a4dbc;
+  color: #000;
 }

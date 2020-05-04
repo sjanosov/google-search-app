@@ -25,16 +25,27 @@
           Search
         </button>
       </form>
-      <div class="btn-container">
-        <a href="#" class="btn-previous" id="btnPrevious">&#8249;</a>
-        <span id="pageNumber"></span>
-        <a href="#" class="btn-next" id="btnNext">&#8250;</a>
-        <!-- <button class="btn-previous" id="btnPrevious">Previous</button>
-        <button class="btn-next" id="btnNext">Next</button> -->
+      <p class="not-found">Your search did not match any documents.</p>
+      <button class="image-button" onclick="downFunction()">
+        Images
+      </button>
+      <div class="btn-container" id="btnContainerDesktop">
+        <a href="#" class="btn-previous">&#8249;</a>
+        <bold class="pageNumber"></bold>
+        <a href="#" class="btn-next">&#8250;</a>
       </div>
+
       <div class="content-container">
         <div class="image-container" id="imagesDiv"></div>
+        <div class="btn-container" id="btnContainerMobile">
+          <a href="#" class="btn-previous">&#8249;</a>
+          <bold class="pageNumber"></bold>
+          <a href="#" class="btn-next">&#8250;</a>
+        </div>
         <div class="text-container" id="textsDiv"></div>
+        <button onclick="topFunction()" id="back2Top" title="Go to top">
+          Top
+        </button>
       </div>
     </div>
     <script src="./script.js"></script>
